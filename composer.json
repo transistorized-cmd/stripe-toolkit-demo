@@ -9,7 +9,7 @@
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "transistorized-cmd/stripe-toolkit-webhooks": "dev-main"
+        "transistorized-cmd/stripe-toolkit-webhooks": "^1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -87,9 +87,5 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/transistorized-cmd/stripe-toolkit-webhooks"
-    }]
+    "prefer-stable": true
 }
