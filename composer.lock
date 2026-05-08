@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b853c5ef088c644d15638f05934334e",
+    "content-hash": "35b3b9dff2a0f0032cb72c275746fd24",
     "packages": [
         {
             "name": "brick/math",
@@ -5972,16 +5972,16 @@
         },
         {
             "name": "transistorized-cmd/stripe-toolkit-webhooks",
-            "version": "dev-main",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/transistorized-cmd/stripe-toolkit-webhooks.git",
-                "reference": "25cdac5491027d2dd369ad644e9a1e828a07a71e"
+                "reference": "4c8f3973dbffd4011f7c6487e58767193d47ce81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/transistorized-cmd/stripe-toolkit-webhooks/zipball/25cdac5491027d2dd369ad644e9a1e828a07a71e",
-                "reference": "25cdac5491027d2dd369ad644e9a1e828a07a71e",
+                "url": "https://api.github.com/repos/transistorized-cmd/stripe-toolkit-webhooks/zipball/4c8f3973dbffd4011f7c6487e58767193d47ce81",
+                "reference": "4c8f3973dbffd4011f7c6487e58767193d47ce81",
                 "shasum": ""
             },
             "require": {
@@ -5999,22 +5999,21 @@
                 "larastan/larastan": "^3.0",
                 "laravel/pint": "^1.0",
                 "orchestra/testbench": "^9.0 || ^10.0 || ^11.0",
-                "pestphp/pest": "^3.0",
-                "pestphp/pest-plugin-laravel": "^3.0"
+                "pestphp/pest": "^3.0 || ^4.0",
+                "pestphp/pest-plugin-laravel": "^3.0 || ^4.0"
             },
             "suggest": {
                 "filament/filament": "Required for the Filament admin panel (Pro tier)."
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
-                    "providers": [
-                        "TransistorizedCmd\\StripeToolkit\\Webhooks\\StripeWebhooksServiceProvider"
-                    ],
                     "aliases": {
                         "StripeWebhook": "TransistorizedCmd\\StripeToolkit\\Webhooks\\Facades\\StripeWebhook"
-                    }
+                    },
+                    "providers": [
+                        "TransistorizedCmd\\StripeToolkit\\Webhooks\\StripeWebhooksServiceProvider"
+                    ]
                 }
             },
             "autoload": {
@@ -6022,19 +6021,7 @@
                     "TransistorizedCmd\\StripeToolkit\\Webhooks\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "TransistorizedCmd\\StripeToolkit\\Webhooks\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "test-coverage": [
-                    "vendor/bin/pest --coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6057,10 +6044,10 @@
                 "webhooks"
             ],
             "support": {
-                "source": "https://github.com/transistorized-cmd/stripe-toolkit-webhooks/tree/main",
-                "issues": "https://github.com/transistorized-cmd/stripe-toolkit-webhooks/issues"
+                "issues": "https://github.com/transistorized-cmd/stripe-toolkit-webhooks/issues",
+                "source": "https://github.com/transistorized-cmd/stripe-toolkit-webhooks/tree/v1.0.0"
             },
-            "time": "2026-05-07T10:06:50+00:00"
+            "time": "2026-05-07T10:51:58+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -8598,9 +8585,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "transistorized-cmd/stripe-toolkit-webhooks": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
